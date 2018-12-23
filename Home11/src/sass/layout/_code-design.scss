@@ -1,0 +1,33 @@
+.code-design {
+  padding: 10px 0;
+  background: url("../img/design-bg.png") no-repeat 50% center, url("../img/code-bg.png") no-repeat right center;
+  background-size: cover, 55% 100%;
+  text-align: center;
+  color: #fff;
+
+  p {
+    padding: 10px 0;
+    text-align: justify;
+  }
+
+  @include respond-to(medium) {
+    text-align: left;
+  }
+
+  .design {
+    padding: 50px 15px;
+
+
+    @include respond-to(medium) {
+      padding: 100px 50px 100px 0;
+    }
+  }
+
+  .code {
+    padding: 0 15px 30px;
+
+    @include respond-to(medium) {
+      padding: 100px 0 100px 50px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+header {
+  height: 100vh;
+  padding-top: 40px;
+  background: url("../img/header-bg.png") no-repeat center 25%;
+  background-size: cover;
+}
+
+.menu {
+  .menu-item {
+    .menu-link {
+      padding: 5px 15px;
+      color: #000;
+      border-radius: 30px;
+      border: 1px solid transparent;
+
+      &:hover {
+        border-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
+.header-title {
+  margin: 0;
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    padding-bottom: 15px;
+    color: #949494;
+  }
+
+  @include respond-to('small') {
+    margin: 3rem 0;
+  }
+
+  @include respond-to('medium') {
+    margin: 6rem 0;
+  }
+
+  @include respond-to('large') {
+    margin: 12rem 0;
+  }
+}
+
+
