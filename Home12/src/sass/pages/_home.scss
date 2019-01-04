@@ -1,0 +1,17 @@
+form {
+  margin: 25px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input[type=text] {
+  margin: 5px;
+}
+
+input[type=button] {
+  width: 50px;
+  margin: 5px;
+}
