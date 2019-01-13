@@ -1,0 +1,21 @@
+.item {
+  position: relative;
+  margin-bottom: 10px;
+  float: left;
+  clear: left;
+}
+
+.hover-edit-menu {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.edit-button, .remove-button, .save-button, .cancel-button {
+  padding: 0 5px;
+  color: #999;
+}
+
+.edit-input.form-control {
+  width: auto;
+  display: inline-block;
+}
