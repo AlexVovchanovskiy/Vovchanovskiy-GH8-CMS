@@ -1,0 +1,96 @@
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font: 700 48px/36px 'Montserrat', sans-serif;
+}
+
+h3 {
+  font: 700 30px/36px 'Montserrat', sans-serif;
+}
+
+p {
+  font: 400 18px/30px 'Montserrat', sans-serif;
+}
+
+header {
+  font-family: 'Montserrat', sans-serif;
+
+  .menu {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 41px;
+    line-height: 48px;
+  }
+}
+
+.button {
+  font: 400 18px/36px 'Montserrat', sans-serif;
+}
+
+.code-design {
+  h2 {
+    font-weight: 400;
+
+    .accent-text {
+      font-weight: 700;
+    }
+  }
+}
+
+.services {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+.about {
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font: 700 24px/36px 'Roboto', sans-serif;
+  }
+}
+
+.slider {
+  h3 {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  @include respond-to(small) {
+    h3 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  @include respond-to(large) {
+    h3 {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: normal;
+    }
+  }
+}
