@@ -5,16 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><?php print $data['siteTitle'] ?></title>
+    <title><?php echo $data['siteTitle']; ?></title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 <header>
     <div class="container">
         <nav class="navbar navbar-expand-md navbar-light">
-            <?php $siteLogo = $data['siteLogo'];
-            print '<h1><a class="navbar-brand" href="/"><img src=' . $data['siteLogo'] . ' alt="logo"></a></h1>'
-            ?>
+            <h1><a class="navbar-brand" href="/"><img src="<?php echo $data['siteLogo']; ?>" alt="logo"></a></h1>
             <button class="navbar-toggler text-dark" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,22 +21,19 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav menu">
-                    <?php
-                    foreach ($data['mainMenu'] as $itemMenu) {
-                        print '<li class="nav-item menu-item">
-                            <a class="nav-link menu-link" href=' . $itemMenu['url'] . '>' . $itemMenu['title'] . '</a>
-                        </li>';
-                    } ?>
+                    <?php foreach ($data['mainMenu'] as $itemMenu) { ?>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link menu-link" href="<?php echo $itemMenu['url']; ?>"><?php echo $itemMenu['title']; ?></a>
+                        </li>
+                    <?php } ?>
                 </ul>
             </div>
         </nav>
 
         <div class="header-title text-center">
-            <h2><?php print $data['titleSections']['headerTitle'] ?></h2>
-            <p><?php print $data['header']['headerText'] ?></p>
-            <?php $button = $data['button'];
-            print '<a class="button" href=' . $data['button']['ask']['url'] . '>' . $data['button']['ask']['title'] . '</a>'
-            ?>
+            <h2><?php echo $data['titleSections']['headerTitle']; ?></h2>
+            <p><?php echo $data['header']['headerText']; ?></p>
+            <a class="button" href="<?php echo $data['button']['ask']['url']; ?>"><?php echo $data['button']['ask']['title']; ?></a>
         </div>
     </div>
 </header>
@@ -47,62 +42,33 @@
     <section class="code-design">
         <div class="container">
             <div class="row">
+                <?php foreach ($data['sectionCodedesign'] as $itemCodedesign) { ?>
                 <div class="design col-sm-12 col-md-6">
-                    <h2><?php print $data['sectionCodedesign']['best'] ?>
-                        <span class="accent-text"><?php print $data['sectionCodedesign']['design'] ?></span>
+                    <h2><?php echo $itemCodedesign['best']; ?>
+                        <span class="accent-text"><?php echo $itemCodedesign['design']; ?></span>
                     </h2>
-                    <p><?php print $data['sectionCodedesign']['text'] ?></p>
-                    <?php $button = $data['button'];
-                    print '<a class="button" href=' . $data['button']['ask']['url'] . '>' . $data['button']['ask']['title'] . '</a>'
-                    ?>
+                    <p><?php echo $itemCodedesign['text']; ?></p>
+                    <a class="button" href="<?php echo $data['button']['ask']['url']; ?>"><?php echo $data['button']['ask']['title']; ?></a>
                 </div>
-                <div class="code col-sm-12 col-md-6">
-                    <h2><?php print $data['sectionCodedesign']['best'] ?>
-                        <span class="accent-text"><?php print $data['sectionCodedesign']['code'] ?></span>
-                    </h2>
-                    <p><?php print $data['sectionCodedesign']['text'] ?></p>
-                    <?php $button = $data['button'];
-                    print '<a class="button" href=' . $data['button']['ask']['url'] . '>' . $data['button']['ask']['title'] . '</a>'
-                    ?>
-                </div>
+                <?php } ?>
             </div>
         </div>
     </section>
 
     <section class="services">
         <div class="container text-center">
-            <h2><?php print $data['titleSections']['servicesTitle'] ?></h2>
+            <h2><?php echo $data['titleSections']['servicesTitle']; ?></h2>
             <div class="first-row row">
+                <?php foreach ($data['sectionServices'] as $itemServices) { ?>
                 <div class="services-item col-12 col-lg-6">
                     <div class="feature text-left">
-                        <h3><?php print $data['sectionServices']['servicesItem1']['title'] ?></h3>
-                        <p><?php print $data['sectionServices']['servicesItem1']['text'] ?></p>
+                        <h3><?php echo $itemServices['title']; ?></h3>
+                        <p><?php echo $itemServices['text']; ?></p>
                     </div>
                 </div>
-                <div class="services-item col-12 col-lg-6">
-                    <div class="feature text-left">
-                        <h3><?php print $data['sectionServices']['servicesItem2']['title'] ?></h3>
-                        <p><?php print $data['sectionServices']['servicesItem2']['text'] ?></p>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
-            <div class="second-row row">
-                <div class="services-item col-12 col-lg-6">
-                    <div class="feature text-left">
-                        <h3><?php print $data['sectionServices']['servicesItem3']['title'] ?></h3>
-                        <p><?php print $data['sectionServices']['servicesItem3']['text'] ?></p>
-                    </div>
-                </div>
-                <div class="services-item col-12 col-lg-6">
-                    <div class="feature text-left">
-                        <h3><?php print $data['sectionServices']['servicesItem4']['title'] ?></h3>
-                        <p><?php print $data['sectionServices']['servicesItem4']['text'] ?></p>
-                    </div>
-                </div>
-            </div>
-            <?php $button = $data['button'];
-            print '<a class="button" href=' . $data['button']['ask']['url'] . '>' . $data['button']['ask']['title'] . '</a>'
-            ?>
+            <a class="button" href="<?php echo $data['button']['ask']['url']; ?>"><?php echo $data['button']['ask']['title']; ?></a>
         </div>
     </section>
 
@@ -147,41 +113,20 @@
                 </div>
             </div>
             <div class="row">
+                <?php foreach ($data['sectionAboutus']['aboutusList'] as $itemAboutus) { ?>
                 <div class="about-member col-10 col-md-6 col-lg-3">
-                    <?php $sectionAboutus = $data['sectionAboutus'];
-                    print '<img src=' . $data['sectionAboutus'][1]['aboutusImg'] . ' alt="John-Doe1">' ?>
-                    <h3><?php print $data['sectionAboutus'][1]['aboutusName'] ?></h3>
-                    <p><?php print $data['sectionAboutus'][1]['aboutusNameInfo'] ?></p>
+                    <img src="<?php echo $itemAboutus['aboutusImg']; ?>" alt="John-Doe">
+                    <h3><?php echo $itemAboutus['aboutusName']; ?></h3>
+                    <p><?php echo $itemAboutus['aboutusNameInfo']; ?></p>
                 </div>
-                <div class="about-member col-10 col-md-6 col-lg-3">
-                    <?php $sectionAboutus = $data['sectionAboutus'];
-                    print '<img src=' . $data['sectionAboutus'][2]['aboutusImg'] . ' alt="John-Doe2">' ?>
-                    <h3><?php print $data['sectionAboutus'][2]['aboutusName'] ?></h3>
-                    <p><?php print $data['sectionAboutus'][2]['aboutusNameInfo'] ?></p>
-                </div>
-                <div class="about-member col-10 col-md-6 col-lg-3">
-                    <?php $sectionAboutus = $data['sectionAboutus'];
-                    print '<img src=' . $data['sectionAboutus'][3]['aboutusImg'] . ' alt="John-Doe3">' ?>
-                    <h3><?php print $data['sectionAboutus'][3]['aboutusName'] ?></h3>
-                    <p><?php print $data['sectionAboutus'][3]['aboutusNameInfo'] ?></p>
-                </div>
-                <div class="about-member col-10 col-md-6 col-lg-3">
-                    <?php $sectionAboutus = $data['sectionAboutus'];
-                    print '<img src=' . $data['sectionAboutus'][4]['aboutusImg'] . ' alt="John-Doe4">' ?>
-                    <h3><?php print $data['sectionAboutus'][4]['aboutusName'] ?></h3>
-                    <p><?php print $data['sectionAboutus'][4]['aboutusNameInfo'] ?></p>
-                </div>
+                <?php } ?>
             </div>
-            <?php $button = $data['button'];
-            print '<a class="button" href=' . $data['button']['watch']['url'] . '>' . $data['button']['watch']['title'] . '</a>'
-            ?>
+            <a class="button" href="<?php echo $data['button']['watch']['url']; ?>"><?php echo $data['button']['watch']['title']; ?></a>
         </div>
     </section>
 
     <section class="map">
-        <?php $sectionMap = $data['sectionMap'];
-        print '<iframe class="map-frame" src=' . $data['sectionMap']['src'] . '></iframe>'
-        ?>
+        <iframe class="map-frame" src="<?php echo $data['sectionMap']['src']; ?>"></iframe>'
     </section>
 </main>
 

@@ -54,31 +54,41 @@ return [
     ],
 
     'sectionCodedesign' => [
-        'best' => 'Best',
-        'design' => 'Design',
-        'code' => 'Code',
-        'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+        [
+            'best' => 'Best',
+            'design' => 'Design',
+            'code' => 'Code',
+            'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
                         auctor mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget
                         eleifend. ',
+        ],
+        [
+            'best' => 'Best',
+            'design' => 'Design',
+            'code' => 'Code',
+            'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                        auctor mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget
+                        eleifend. ',
+        ],
     ],
 
     'sectionServices' => [
-        'servicesItem1' => [
+        [
             'title' => 'Web design',
             'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur
                        ullamcorper auctor mauris, placerat fermentum.',
         ],
-        'servicesItem2' => [
+        [
             'title' => 'Web Applications',
             'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur
                        ullamcorper auctor mauris, placerat fermentum.',
         ],
-        'servicesItem3' => [
+        [
             'title' => 'Digital paiting',
             'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur
                        ullamcorper auctor mauris, placerat fermentum.',
         ],
-        'servicesItem4' => [
+        [
             'title' => 'Desktop Applications',
             'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur
                        ullamcorper auctor mauris, placerat fermentum.',
@@ -110,25 +120,27 @@ return [
     'sectionAboutus' => [
         'aboutusText' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur 
                           ullamcorper auctor mauris, placerat fermentum.',
-        1 => [
-            'aboutusImg' => 'assets/img/John-Doe1.png',
-            'aboutusName' => 'John Doe',
-            'aboutusNameInfo' => 'Curabitur ullamcorper auctor mauris, placerat fermentum.',
-        ],
-        2 => [
-            'aboutusImg' => 'assets/img/John-Doe2.png',
-            'aboutusName' => 'John Doe',
-            'aboutusNameInfo' => 'Aliquam sagittis neque in lectus semper, arcu scelerisque.',
-        ],
-        3 => [
-            'aboutusImg' => 'assets/img/John-Doe3.png',
-            'aboutusName' => 'John Doe',
-            'aboutusNameInfo' => 'Curabitur ullamcorper auctor mauris, placerat fermentum.',
-        ],
-        4 => [
-            'aboutusImg' => 'assets/img/John-Doe4.png',
-            'aboutusName' => 'John Doe',
-            'aboutusNameInfo' => 'Neque in lectus semper, nec elementum arcu scelerisque.',
+        'aboutusList' => [
+            [
+                'aboutusImg' => 'assets/img/John-Doe1.png',
+                'aboutusName' => 'John Doe',
+                'aboutusNameInfo' => 'Curabitur ullamcorper auctor mauris, placerat fermentum.',
+            ],
+            [
+                'aboutusImg' => 'assets/img/John-Doe2.png',
+                'aboutusName' => 'John Doe',
+                'aboutusNameInfo' => 'Aliquam sagittis neque in lectus semper, arcu scelerisque.',
+            ],
+            [
+                'aboutusImg' => 'assets/img/John-Doe3.png',
+                'aboutusName' => 'John Doe',
+                'aboutusNameInfo' => 'Curabitur ullamcorper auctor mauris, placerat fermentum.',
+            ],
+            [
+                'aboutusImg' => 'assets/img/John-Doe4.png',
+                'aboutusName' => 'John Doe',
+                'aboutusNameInfo' => 'Neque in lectus semper, nec elementum arcu scelerisque.',
+            ],
         ],
     ],
 
