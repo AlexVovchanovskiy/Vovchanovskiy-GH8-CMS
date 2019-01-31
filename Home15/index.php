@@ -16,8 +16,7 @@ function sortInsert($arr)
         $key_value = $arr[$i];
         $j = $i - 1;
         while ($arr[$j] > $key_value) {
-            $arr[$j + 1] = $arr[$j];
-            $j = $j - 1;
+            
         }
         $arr[$j + 1] = $key_value;
     }
